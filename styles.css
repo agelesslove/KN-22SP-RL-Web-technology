@@ -1,0 +1,73 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3; /* Світло-сірий фон */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Темно-сірий текст */
+}
+
+/* Стиль заголовків */
+h1, h2 {
+    color: #6a0dad; /* Фіолетовий колір для заголовків */
+}
+
+header {
+    text-align: center; /* Вирівнювання заголовка по центру */
+}
+
+/* Стиль для секцій */
+section {
+    padding: 7px; /* Відступи, що дорівнюють вашому варіанту */
+    margin-bottom: 20px; /* Відступ між секціями */
+}
+
+/* Стиль для секції "Про мене" */
+section:first-of-type {
+    background-color: transparent; /* Прозорий фон */
+    text-align: left; /* Вирівнювання тексту зліва */
+}
+
+/* Стиль для таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Об'єднання меж таблиці */
+}
+
+table caption {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid #ccc; /* Світло-сіра межа */
+    padding: 10px;
+    text-align: left; /* Вирівнювання тексту зліва */
+}
+
+th {
+    background-color: #777777; 
+    color: white; /* Білий текст */
+}
+
+/* Стиль для блоку цитати */
+blockquote {
+    font-style: italic; /* Курсив для цитати */
+    margin: 15px 0; /* Відступ для цитати */
+    padding: 15px; /* Збільшено відступ для цитати */
+    background-color: #777777; /* Фон для цитати */
+    color: #ffffff; /* Темно-сірий текст */
+    border-left: 5px solid #777777; /* Ліва межа */
+    border-radius: 5px; /* Закруглені краї */
+}
+
+/* Стиль для секції з цитатою */
+.my-section {
+    background-color: #777777; /* Унікальний колір для секції 7 */
+    color: white; /* Білий текст */
+    padding: 7px; /* Відступи 7 */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    margin-bottom: 20px; /* Відступ між секціями */
+    text-align: right; /* Вирівнювання контенту по правому краю варіант 7 */
+}

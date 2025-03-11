@@ -87,13 +87,14 @@ li::marker {
     .container {
         flex-direction: column; /* Змінюємо напрямок на вертикальний */
         align-items: stretch; /* Розтягуємо блоки на всю ширину контейнера */
-        font-family: 'Verdana', sans-serif; /* Змінюємо шрифт для мобільних */
-        font-size: 14px; /* Зменшуємо розмір шрифту */
     }
-
+body {
+    font-size: 14px; /* Зменшуємо розмір шрифту */ 
+    font-family: 'Verdana', sans-serif; /* Змінюємо шрифт для мобільних */   
+}
     .box {
         margin: 10px 0; /* Встановлюємо вертикальні відступи між блоками */
-        background-color: #e0e0e0; /* Змінюємо колір заливки блоків для мобільних */
+        background-color: #e27a7a; /* Змінюємо колір заливки блоків для мобільних */
     }
     h2 {
         font-size: 20px; /* Зменшуємо розмір заголовка */

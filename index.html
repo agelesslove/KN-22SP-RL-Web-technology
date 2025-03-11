@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 4: Вступ до JavaScript</title>
+</head>
+<body>
+  <h1>Лабораторна робота 4: Вступ до JavaScript</h1>
+  
+  <script>
+
+    // Завдання 1: Привітання користувача
+        console.log("Завдання 1.");
+        let userName = prompt("Введіть своє ім'я:");
+        alert("Вітаю, " +userName);
+
+    // Завдання 2: Проста арифметика
+      console.log("Завдання 2.");
+      let num1 = parseFloat(prompt("Введіть перше число:"));
+        let num2 = parseFloat(prompt("Введіть друге число:"));
+        let product = num1 * num2;
+        let quotient = num2 !== 0 ? num1 / num2 : "Ділення на нуль не визначене";
+
+        alert("Добуток: " + product + "\nЧастка: " + quotient);
+        console.log("Добуток: " + product + ", Частка: " + quotient);
+
+    // Завдання 3: Вік користувача
+      console.log("Завдання 3.");
+      let birthYear = parseInt(prompt("Введіть ваш рік народження:"));
+const currentYear = 2025;
+let userAge = currentYear - birthYear;
+const myAge = 19; 
+let ageDifference = myAge - userAge;
+let ageMessage;
+
+if (ageDifference > 0) {
+    ageMessage = "Користувач молодший на " + ageDifference + " років.";
+} else if (ageDifference < 0) {
+    ageMessage = "Користувач старший на " + Math.abs(ageDifference) + " років.";
+} else {
+    ageMessage = "Користувач одного віку з вами.";
+}
+alert("Ваш вік: " + userAge + " років.\n" + ageMessage);
+  </script>
+</body>
+</html>

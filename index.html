@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маніпуляція DOM та обробка подій</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        header, footer {
+            background: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin-left: 0;
+        }
+        .hover-box {
+            padding: 10px;
+            border: 1px solid #000;
+            display: inline-block;
+        }
+        .element-list {
+            margin-top: 10px;
+        }
+        .element-list div {
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Маніпуляція DOM та обробка подій</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Зміна вмісту елемента</h2>
+            <p id="text">Текст змінено! Це новий вміст.</p>
+            <button onclick="changeText()">Змінити текст</button>
+        </section>
+
+        <section>
+            <h2>Обробка подій</h2>
+            <div class="hover-box" onmouseover="changeStyle(this)" onmouseout="resetStyle(this)">Наведіть курсор на мене</div>
+            <p>Наведіть курсор на комірку і побачите зміну стилю.</p>
+        </section>
+
+        <section>
+            <h2>Додавання нового елемента</h2>
+            <button onclick="addElement()">Додати елемент</button>
+            <div class="element-list" id="elementContainer"></div>
+        </section>
+
+        <section>
+            <h2>Додаткове завдання</h2>
+            <button id="counterButton">Натисніть 7 разів!</button>
+        </section>
+    </main>
+    <footer>
+        <p>Лабораторна робота 5. JavaScript, DOM, події.</p>
+    </footer>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").textContent = "Новий текстовий вміст";
+        }
+
+        function changeStyle(element) {
+            element.style.backgroundColor = "yellow";
+        }
+
+        function resetStyle(element) {
+            element.style.backgroundColor = "white";
+        }
+
+        function addElement() {
+            let newElement = document.createElement("div");
+            newElement.textContent = "Це новий доданий елемент.";
+            document.getElementById("elementContainer").appendChild(newElement);
+        }
+
+        let count = 0;
+        document.getElementById("counterButton").addEventListener("click", function() {
+            count++;
+            if (count === 7) {
+                alert("Лесів Роман варіант номер 7!");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -43,7 +43,7 @@
     <main>
         <section>
             <h2>Зміна вмісту елемента</h2>
-            <p id="text">Текст змінено! Це новий вміст.</p>
+            <p id="text">Текст змінено! Це абсолютно новий зміст</p>
             <button onclick="changeText()">Змінити текст</button>
         </section>
 
@@ -63,6 +63,12 @@
             <h2>Додаткове завдання</h2>
             <button id="counterButton">Натисніть 7 разів!</button>
         </section>
+        <section>
+        <h1>Додати гіфку на сайт</h1>
+        <button id="addGifButton">Додати гіфку</button>
+        <div id="gifContainer"></div>
+    </section>
+        
     </main>
     <footer>
         <p>Лабораторна робота 5. JavaScript, DOM, події.</p>
@@ -94,6 +100,15 @@
                 alert("Лесів Роман варіант номер 7!");
             }
         });
+        const button = document.getElementById('addGifButton');
+            const container = document.getElementById('gifContainer');
+    
+            button.addEventListener('click', () => {
+                const gif = document.createElement('img');
+                gif.src = 'https://media.giphy.com/media/tHIRLHtNwxpjIFqPdV/giphy.gif?cid=790b7611m46vv62nnblxuh1xsn14rpxkdkdv36sc55qs2yhy&ep=v1_gifs_trending&rid=giphy.gif&ct=g.gif'; 
+                gif.alt = 'Гіфка';
+                container.appendChild(gif);
+            });
     </script>
 </body>
 </html>

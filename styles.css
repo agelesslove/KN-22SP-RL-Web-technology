@@ -1,31 +1,27 @@
-/* Загальні стилі */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3; /* Світло-сірий фон */
+    font-family: Inter, sans-serif;
+    background-color: #f3f3f3; 
     margin: 0;
     padding: 20px;
-    color: #333; /* Темно-сірий текст */
+    color: #000000; 
 }
-
-/* Стиль заголовків */
 h1, h2 {
-    color: #6a0dad; /* Фіолетовий колір для заголовків */
+    color: #6a0dad; 
 }
 
 header {
-    text-align: center; /* Вирівнювання заголовка по центру */
+    text-align: center; 
 }
-
-/* Стиль для секцій */
 section {
-    padding: 7px; /* Відступи, що дорівнюють вашому варіанту */
-    margin-bottom: 20px; /* Відступ між секціями */
+    padding: 7px; /* Відступи які дорівнюють варіанту */
+    margin-bottom: 20px; 
 }
 
-/* Стиль для секції "Про мене" */
+
 section:first-of-type {
     background-color: transparent; /* Прозорий фон */
-    text-align: left; /* Вирівнювання тексту зліва */
+    text-align: left; 
 }
 
 /* Стиль для таблиці */
@@ -40,34 +36,41 @@ table caption {
 }
 
 th, td {
-    border: 1px solid #ccc; /* Світло-сіра межа */
+    border: 1px solid #ccc; 
     padding: 10px;
-    text-align: left; /* Вирівнювання тексту зліва */
+    text-align: right; 
 }
 
 th {
     background-color: #777777; 
-    color: white; /* Білий текст */
+    color: white; 
 }
 
-/* Стиль для блоку цитати */
 blockquote {
     font-style: italic; /* Курсив для цитати */
-    margin: 15px 0; /* Відступ для цитати */
-    padding: 15px; /* Збільшено відступ для цитати */
-    background-color: #777777; /* Фон для цитати */
-    color: #ffffff; /* Темно-сірий текст */
-    border-left: 5px solid #777777; /* Ліва межа */
+    margin: 15px 0; 
+    padding: 15px; 
+    background-color: #777777; 
+    color: #ffffff; 
+    border-left: 5px solid #777777; 
     border-radius: 5px; /* Закруглені краї */
 }
 
-/* Стиль для секції з цитатою */
 .my-section {
-    background-color: #777777; /* Унікальний колір для секції 7 */
-    color: white; /* Білий текст */
+    background-color: #777777;  
+    color: white; 
     padding: 7px; /* Відступи 7 */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь */
     margin-bottom: 20px; /* Відступ між секціями */
-    text-align: right; /* Вирівнювання контенту по правому краю варіант 7 */
+    text-align: right; /* Вирівнювання контенту по правому краю непарний варіант */
+}
+.contact-info {
+    padding-right: 10px;
+    text-align: right; 
+}
+
+.contact-info li {
+    padding-right: 10px;
+    direction: rtl; 
 }

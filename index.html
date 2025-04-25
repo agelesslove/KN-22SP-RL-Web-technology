@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Сайт-візитка</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Роман Лесів</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="tablink active" data-target="about">Про мене</a></li>
+        <li><a href="#" class="tablink" data-target="skills">Навички</a></li>
+        <li><a href="#" class="tablink" data-target="contact">Контакти</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">Змінити тему</button>
+  </header>
+
+  <main>
+    <!-- Вкладки -->
+    <section id="tabs">
+      <!-- Секція "Про мене" -->
+      <div id="about" class="tabcontent">
+        <div class="about-card">
+          <p>
+            Мене звати Роман Лесів, я навчаюся на північному кампусі Львівського національного університету ветеринарної медицини та біотехнологій імені С.З. Ґжицького. Моя спеціальність пов'язана з сучасними технологіями, і я зацікавлений у всіх предметах свого курсу.
+          </p>
+          <p>
+            З самого початку навчання мене захопило створення сайтів та інтерфейсів, які зручно виглядають і працюють. Пробую себе в різних проєктах, щоб практикуватися і краще розуміти, як усе працює насправді.
+          </p>
+          <p>
+            Окрім вебу, мені подобається тема Internet of Things (IoT). Я вже робив кілька простих проєктів на Arduino Uno, підключав сенсори, RFID-модулі та інше — дуже цікаво бачити, як техніка "оживає".
+          </p>
+          <p>
+            У вільний час намагаюсь дізнаватись щось нове — читаю про нові технології, іноді проходжу онлайн-курси або просто експериментую з кодом. 
+          </p>
+          <p>
+            Мрію стати Full-Stack розробником, який не просто кодить, а створює корисні речі, що справді потрібні людям.
+          </p>
+        </div>
+      </div> 
+
+      <!-- Секція "Навички" -->
+      <div id="skills" class="tabcontent">
+        <h2>Мої навички</h2>
+
+        <div class="skill-category">
+          <h3>Володіння мовами програмування</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Apex</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Володіння веб розробкою</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Володіння мовами</h3>
+          <ul>
+            <li>Українська — рідна</li>
+            <li>Англійська — B2</li>
+            <li>Російська — С1 (хочу забути)</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Володіння інструментами та технологіями</h3>
+          <ul>
+            <li>Git та GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>Linux (базові навички)</li>
+            <li>Tinkercad</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Секція "Контакти" -->
+      <div id="contact" class="tabcontent">
+        <h2>Зв'язатися зі мною</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Ваше ім’я" required>
+          <input type="email" id="email" placeholder="Ваш email" required>
+          <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+          <button type="submit">Надіслати</button>
+        </form>
+        <p class="contact-methods-title">Ви можете зв'язатися зі мною через:</p>
+        <ul class="contact-methods-list">
+          <li>Telegram: <a href="https://t.me/agelesslove" target="_blank">@agelesslove</a></li>
+          <li>Steam: <a href="https://steamcommunity.com/id/S_u_p_e_r_s/" target="_blank">https://steamcommunity.com/id/S_u_p_e_r_s/</a></li>
+          <li>GitHub: <a href="https://github.com/agelesslove" target="_blank">https://github.com/agelesslove</a></li>
+        </ul>
+      </div>
+
+      <div class="secret-section">
+        <p>Це секретний текст! Привіт!</p>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p id="viewCounter">Переглядів сторінки: 0</p>
+    <p>© 2025 Роман Лесів. Всі права захищені.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
